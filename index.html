@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <button class="btn again">🔄 Again!</button>
+        <p class="between">Number Is Between 1 and 20</p>
+      </div>
+      <h1 class="heading">☺ Guess My Number!</h1>
+      <div class="number"><span class="num" style="display: inline-block;  margin: 0 auto;">?</span></div>
+    </header>
+    <main>
+      <section class="left">
+        <form id="form">
+          <input type="number" class="guess border-white" autofocus />
+          <button class="btn check">Check!</button>
+        </form>
+        
+      </section>
+      <section class="right">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+      <button class="show-modal">How to Get Best Experience</button>
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+          <p>
+            - I made this game while learning javascript, I focused more on getting the features to work and simply used the starter files design (The tutor had same perspective as I did). <br>
+            - for reason above, please view this game on desktop or desktop mode(If using mobile) to get the best interface. <br>
+            <br>
+            - The game guide: <br>
+            - Click is equivalent to tap on most touchscreen devices. <br>
+            - There's an hidden number you have to guess. <br>
+            - Enter your guess in the input box. <br>
+            - press Enter or Click "Check" to check if you guessed right. <br>
+            - After twenty failed attempts the game is lost. <br>
+            - To restart, simply click "Again" at top left corner or press esc on your keyboard. <br>
+            <br>
+            -To hide this message: Click the close button  (&times;) or click anywhere oustside this box.  
+          </p>
+      </div>
+      <div class="overlay hidden"></div>
+    </main>
+
+    <div class="pop-up hide-pop-up">
+      <p>Click "How to Get Best Experience" for best perfomance.</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
